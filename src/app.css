@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-contained {
+	@apply bg-primary-light text-neutral-dark font-semibold py-4 px-6 rounded hover:bg-primary-light-hover  transition-all duration-300;
+}
+
+.button-contained.disabled {
+	@apply bg-muted text-muted-text font-semibold py-4 px-6 rounded;
+}
+
+.button-outlined {
+	@apply border-primary-light border box-border text-primary-light font-semibold py-4 px-6 rounded hover:bg-primary-dark hover:bg-opacity-80 hover:border-opacity-80 hover:cursor-pointer transition-all duration-300;
+}
+
+.button-outlined.disabled {
+	@apply text-muted-text border-muted font-semibold py-4 px-6 rounded hover:bg-opacity-0 hover:cursor-default hover:border-opacity-0;
+}
+
+.button-text {
+	@apply text-primary-light font-semibold py-4 px-6 rounded hover:bg-primary-dark hover:bg-opacity-80 hover:cursor-pointer transition-all duration-300;
+}
+
+.button-text.disabled {
+	@apply text-muted-text font-semibold py-4 px-6 hover:bg-opacity-0 hover:cursor-default;
+}
